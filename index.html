@@ -1,0 +1,3185 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>MintX | Chicles funcionales y homeopáticos sin azúcar xilitol</title>
+<meta name="description" content="MintX: Chicles funcionales 100% con Xilitol y homeopatía. Beneficios para digestión, sensibilidad dental y limpieza bucal. Sabor natural apto para diabéticos." />
+<meta name="keywords" content="chicles, xilitol, homeopáticos, sin azúcar, diabéticos, salud bucal, digestión, sensibilidad dental, MintX" />
+<meta name="author" content="MintX México" />
+<meta property="og:title" content="MintX | Chicles funcionales y homeopáticos sin azúcar xilitol" />
+<meta property="og:description" content="Chicles MintX con xilitol y homeopatía para digestión y sensibilidad dental. Apto para diabéticos. Compra fácil y rápido." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mintx.mx" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1514516873161-7d8ba03c47e0?auto=format&fit=crop&w=800&q=80" />
+<meta property="og:locale" content="es_MX" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MintX | Chicles funcionales y homeopáticos sin azúcar xilitol" />
+<meta name="twitter:description" content="Chicles MintX con xilitol y homeopatía para digestión y sensibilidad dental. Apto para diabéticos. Compra fácil y rápido." />
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1514516873161-7d8ba03c47e0?auto=format&fit=crop&w=800&q=80" />
+
+<!-- Google Analytics -->
+<!-- 
+<script async src="https://www.googletagmanager.com/gtag/js?id=TU_ID_DE_ANALYTICS"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'TU_ID_DE_ANALYTICS');
+</script>
+-->
+
+<style>
+  /* Reset and base */
+  * {
+    margin:0; padding:0; box-sizing:border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f9f7;
+    color: #044d40;
+    line-height: 1.4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: #ff6f51;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, button:hover {
+    color: #ff4a30;
+  }
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    color: #044d40;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  input, select {
+    font-family: inherit;
+  }
+
+  /* Colors */
+  :root {
+    --color-mint: #4ccb97; /* verde menta */
+    --color-blue-deep: #044d40; 
+    --color-white: #fff;
+    --color-coral: #ff6f51; /* naranja coral para botones */
+    --color-gray-light: #e0e6e3;
+    --color-gray-medium: #8a9a8d;
+    --color-red: #d94f52;
+    --color-green-success: #3bb165;
+    --color-shadow-dark: rgba(4, 77, 64, 0.25);
+  }
+
+  /* Container & layout basics */
+  .container {
+    width: 95vw;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* HEADER FIXED */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 56px;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-light);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    box-shadow: 0 1px 3px var(--color-shadow-dark);
+  }
+  header .logo {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--color-mint);
+    user-select: none;
+    letter-spacing: 1.2px;
+  }
+
+  /* Hamburger menu and nav */
+  #menu-toggle {
+    display:none;
+  }
+  .menu-btn {
+    margin-left: auto;
+    width: 35px;
+    height: 28px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu-btn span {
+    display:block;
+    height: 3px; 
+    background-color: var(--color-blue-deep);
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  #menu-toggle:checked + .menu-btn span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  #menu-toggle:checked + .menu-btn span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .menu-btn span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+
+  nav {
+    position: fixed;
+    top: 56px;
+    left: 0; right: 0;
+    background: var(--color-white);
+    border-top: 1px solid var(--color-gray-light);
+    box-shadow: 0 2px 10px var(--color-shadow-dark);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 1000;
+  }
+  #menu-toggle:checked ~ nav {
+    max-height: 280px;
+  }
+  nav ul {
+    list-style: none;
+    padding: 8px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  nav ul li {
+    font-weight: 600;
+  }
+  nav ul li button {
+    background: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1.5px solid var(--color-mint);
+    color: var(--color-mint);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  nav ul li button.active,
+  nav ul li button:hover {
+    background-color: var(--color-mint);
+    color: var(--color-white);
+  }
+
+  /* HEADER ICONS */
+  .header-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .header-icons button {
+    position: relative;
+    background: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    color: var(--color-blue-deep);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.8px solid transparent;
+    transition: border-color 0.3s;
+  }
+  .header-icons button:focus,
+  .header-icons button:hover {
+    border-color: var(--color-mint);
+    outline-offset: 2px;
+  }
+  .header-icons .icon-counter {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: var(--color-coral);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 0.65rem;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    user-select: none;
+  }
+  .header-icons button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Search input inside header */
+  .header-search {
+    position: relative;
+    margin-left: 16px;
+    flex-grow: 1;
+    max-width: 370px;
+  }
+  .header-search input[type="search"] {
+    width: 100%;
+    padding: 8px 36px 8px 12px;
+    border-radius: 24px;
+    border: 1.5px solid var(--color-gray-light);
+    font-size: 0.95rem;
+    color: var(--color-blue-deep);
+  }
+  .header-search input[type="search"]:focus {
+    border-color: var(--color-mint);
+    outline: none;
+  }
+  .header-search .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    stroke: var(--color-gray-medium);
+    stroke-width: 1.7;
+    width: 18px;
+    height: 18px;
+  }
+
+  .autocomplete-list {
+    position: absolute;
+    top: 40px; left: 0; right: 0;
+    background: var(--color-white);
+    max-height: 160px;
+    overflow-y: auto;
+    border-radius: 0 0 16px 16px;
+    border: 1.5px solid var(--color-mint);
+    box-shadow: 0 4px 8px var(--color-shadow-dark);
+    z-index: 1200;
+  }
+  .autocomplete-list div {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+    border-bottom: 1px solid var(--color-gray-light);
+  }
+  .autocomplete-list div:last-child {
+    border-bottom: none;
+  }
+  .autocomplete-list div:hover,
+  .autocomplete-list div.autocomplete-active {
+    background-color: var(--color-mint);
+    color: white;
+  }
+
+  /* HERO BANNER */
+  main > section.hero {
+    margin-top: 56px;
+    background: linear-gradient(135deg, #b1f5dc 20%, #49b086 80%);
+    color: var(--color-white);
+    padding: 28px 16px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 4px rgb(4 77 64 / 0.6);
+  }
+  .hero p {
+    font-weight: 600;
+    font-size: 1rem;
+    max-width: 360px;
+    margin: 10px auto 24px;
+    text-shadow: 1px 1px 3px rgb(4 77 64 / 0.4);
+  }
+  .hero .price-from {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 3px rgb(4 77 64 / 0.4);
+  }
+  .hero button.cta-buy {
+    background-color: var(--color-coral);
+    color: var(--color-white);
+    border-radius: 28px;
+    padding: 14px 46px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgb(255 111 81 / 0.6);
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  .hero button.cta-buy:hover,
+  .hero button.cta-buy:focus {
+    background-color: #ff5530;
+    outline-offset: 3px;
+  }
+  .hero .hero-image {
+    position: absolute;
+    top: 0; right: 10px;
+    height: 100%;
+    max-width: 320px;
+    opacity: 0.35;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* FILTERS BAR */
+  .filters-bar {
+    background: var(--color-white);
+    padding: 12px 16px 12px;
+    box-shadow: 0 1px 5px var(--color-shadow-dark);
+    position: sticky;
+    top: 56px;
+    z-index: 900;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter-group {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-group label {
+    font-weight: 600;
+    color: var(--color-blue-deep);
+    font-size: 0.85rem;
+    user-select: none;
+  }
+  select, input[type="range"] {
+    border-radius: 8px;
+    border: 1.5px solid var(--color-gray-light);
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+    min-width: 100px;
+    transition: border-color 0.3s ease;
+  }
+  select:focus, input[type="range"]:focus {
+    border-color: var(--color-mint);
+    outline: none;
+  }
+  label.range-label {
+    font-size: 0.8rem;
+    margin-left: 8px;
+    min-width: 28px;
+    text-align: center;
+    user-select: none;
+    color: var(--color-gray-medium);
+  }
+
+  .filter-checkboxes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .filter-checkboxes label {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--color-blue-deep);
+    font-size: 0.85rem;
+    user-select: none;
+  }
+  .filter-checkboxes input[type="checkbox"] {
+    margin-right: 4px;
+    transform: scale(0.85);
+    vertical-align: middle;
+  }
+
+  .compare-btn {
+    background: var(--color-coral);
+    color: var(--color-white);
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    box-shadow: 0 2px 8px rgb(255 111 81 / 0.5);
+    transition: background-color 0.25s ease;
+    user-select: none;
+  }
+  .compare-btn:disabled {
+    opacity: 0.45;
+    cursor: default;
+    box-shadow: none;
+  }
+  .compare-btn:not(:disabled):hover,
+  .compare-btn:not(:disabled):focus {
+    background-color: #ff5530;
+    outline-offset: 3px;
+  }
+
+  /* PRODUCT CATALOG */
+  .catalog {
+    padding: 16px 0 48px;
+    background: var(--color-faint-bkg);
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    gap: 16px;
+  }
+  .product-card {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 12px 12px 20px;
+    box-shadow: 0 4px 12px rgb(4 77 64 / 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .product-photo {
+    flex-shrink: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 140px;
+    margin-bottom: 12px;
+  }
+  .product-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+  .discount-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--color-coral);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 18px;
+    user-select: none;
+    box-shadow: 0 2px 8px rgb(255 111 81 / 0.6);
+  }
+  .product-title {
+    font-weight: 700;
+    color: var(--color-blue-deep);
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    user-select: none;
+  }
+  .price-wrapper {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--color-gray-medium);
+  }
+  .price-wrapper .old-price {
+    text-decoration: line-through;
+    margin-right: 8px;
+  }
+  .price-wrapper .offer-price {
+    font-weight: 900;
+    color: var(--color-mint);
+  }
+  .product-desc {
+    font-size: 0.85rem;
+    color: var(--color-blue-deep);
+    margin-bottom: 14px;
+  }
+  .presentation-select {
+    margin-bottom: 12px;
+  }
+  .presentation-select select {
+    width: 100%;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+    border: 1.3px solid var(--color-gray-light);
+    transition: border-color 0.3s ease;
+  }
+  .presentation-select select:focus {
+    outline: none;
+    border-color: var(--color-mint);
+  }
+  .product-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .heart-icon {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    fill: none;
+    stroke: var(--color-mint);
+    stroke-width: 2.1;
+    transition: stroke 0.3s ease, fill 0.3s ease;
+  }
+  .heart-icon.favorited {
+    fill: var(--color-coral);
+    stroke: var(--color-coral);
+  }
+  .compare-checkbox {
+    align-self: center;
+    display: flex;
+    gap: 4px;
+    font-size: 0.8rem;
+    color: var(--color-gray-medium);
+    user-select: none;
+    cursor: pointer;
+  }
+  .compare-checkbox input[type="checkbox"] {
+    transform: scale(0.9);
+    margin-right: 2px;
+  }
+  .btn-primary, .btn-secondary {
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 10px 18px;
+    flex: 1;
+    border: none;
+    color: var(--color-white);
+    box-shadow: 0 3px 10px rgb(4 77 64 / 0.18);
+    transition: background-color 0.3s ease;
+  }
+  .btn-primary {
+    background-color: var(--color-coral);
+  }
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #ff5530;
+    outline-offset: 2px;
+  }
+  .btn-secondary {
+    background-color: var(--color-mint);
+  }
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    background-color: #3db774;
+    outline-offset: 2px;
+  }
+
+  /* PRUEBA SOCIAL */
+  section.testimonials {
+    background: var(--color-white);
+    padding: 28px 16px 40px;
+    box-shadow: 0 3px 10px rgb(4 77 64 / 0.1);
+    margin-bottom: 40px;
+  }
+  section.testimonials .stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .stat-item {
+    text-align: center;
+    user-select: none;
+  }
+  .stat-item strong {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-mint);
+    margin-bottom: 6px;
+  }
+  .stat-stars {
+    color: #ffbe35;
+    font-size: 1.4rem;
+    user-select: none;
+  }
+  .review-cards {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  .review-card {
+    min-width: 260px;
+    background: var(--color-faint-bkg);
+    border-radius: 12px;
+    padding: 12px 14px;
+    box-shadow: 0 3px 10px rgb(4 77 64 / 0.1);
+    flex-shrink: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .review-photo {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .review-content {
+    flex-grow: 1;
+    font-size: 0.85rem;
+    color: var(--color-blue-deep);
+  }
+  .review-name {
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .review-text {
+    font-style: italic;
+  }
+  .logos-bar {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .logos-bar img {
+    max-height: 38px;
+    opacity: 0.85;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,.05));
+    user-select: none;
+  }
+
+  /* DRAWER: CARRITO LATERAL */
+  #cart-drawer {
+    position: fixed;
+    top: 0; right: -100vw;
+    width: 320px;
+    max-width: 90vw;
+    height: 100%;
+    background: var(--color-white);
+    box-shadow: -5px 0 18px rgb(4 77 64 / 0.3);
+    z-index: 1500;
+    padding: 16px 12px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease;
+  }
+  #cart-drawer.open {
+    right: 0;
+  }
+  #cart-drawer h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: var(--color-blue-deep);
+    user-select: none;
+  }
+  #cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 12px;
+  }
+  .cart-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed var(--color-gray-light);
+    padding-bottom: 8px;
+  }
+  .cart-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .cart-item-info {
+    flex-grow: 1;
+  }
+  .cart-item-info h4 {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-blue-deep);
+    margin-bottom: 4px;
+  }
+  .cart-item-info .presentation {
+    font-size: 0.8rem;
+    color: var(--color-gray-medium);
+    margin-bottom: 6px;
+  }
+  .cart-item-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+  }
+  .cart-item-controls button {
+    background-color: var(--color-mint);
+    color: var(--color-white);
+    border-radius: 6px;
+    width: 26px;
+    height: 26px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 24px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  .cart-item-controls button:hover,
+  .cart-item-controls button:focus {
+    background-color: #3db774;
+    outline-offset: 2px;
+  }
+  .cart-remove-btn {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    color: var(--color-red);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.3rem;
+    user-select: none;
+    padding: 0 5px 5px 5px;
+    line-height: 1;
+  }
+  .cart-remove-btn:hover,
+  .cart-remove-btn:focus {
+    color: #b42f2e;
+  }
+
+  #coupon-form {
+    margin-bottom: 16px;
+  }
+  #coupon-form label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+    margin-bottom: 6px;
+    display: block;
+  }
+  #coupon-form input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1.5px solid var(--color-gray-light);
+    font-size: 1rem;
+    color: var(--color-blue-deep);
+  }
+  #coupon-form input:focus {
+    outline: none;
+    border-color: var(--color-mint);
+  }
+  #coupon-form button {
+    margin-top: 8px;
+    background-color: var(--color-coral);
+    color: var(--color-white);
+    border-radius: 20px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 0;
+    box-shadow: 0 3px 8px rgb(255 111 81 / 0.6);
+    border: none;
+  }
+  #coupon-form button:hover,
+  #coupon-form button:focus {
+    background-color: #ff5530;
+  }
+
+  .shipping-calculator {
+    margin-bottom: 10px;
+  }
+  .shipping-calculator label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+  }
+  .shipping-calculator input {
+    width: 70%;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1.5px solid var(--color-gray-light);
+    margin-left: 6px;
+    color: var(--color-blue-deep);
+  }
+  .shipping-calculator button {
+    margin-top: 6px;
+    background-color: var(--color-mint);
+    color: var(--color-white);
+    border-radius: 20px;
+    font-weight: 700;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 3px 10px rgb(75 195 151 / 0.7);
+    transition: background-color 0.25s ease;
+  }
+  .shipping-calculator button:hover,
+  .shipping-calculator button:focus {
+    background-color: #3db774;
+  }
+
+  .cart-summary {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--color-blue-deep);
+    border-top: 1px solid var(--color-gray-light);
+    padding-top: 14px;
+  }
+  .cart-summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .cart-summary div.total {
+    font-size: 1.2rem;
+    color: var(--color-mint);
+  }
+  .cart-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+  }
+  .cart-actions button {
+    flex-grow: 1;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(4 77 64 / 0.2);
+  }
+  .cart-actions button.btn-checkout {
+    background-color: var(--color-coral);
+    color: var(--color-white);
+  }
+  .cart-actions button.btn-checkout:hover,
+  .cart-actions button.btn-checkout:focus {
+    background-color: #ff5530;
+  }
+  .cart-actions button.btn-close {
+    background-color: var(--color-gray-light);
+    color: var(--color-blue-deep);
+  }
+  .cart-actions button.btn-close:hover,
+  .cart-actions button.btn-close:focus {
+    background-color: #cfd3d0;
+  }
+
+  /* MODAL common styles */
+  .modal-bg {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(4,77,64,0.7);
+    z-index: 1900;
+    overflow-y: auto;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .modal-bg.active {
+    display: block;
+  }
+  .modal {
+    background: var(--color-white);
+    max-width: 460px;
+    width: 90vw;
+    margin: 56px auto 56px;
+    border-radius: 18px;
+    padding: 20px 20px 26px;
+    position: relative;
+    box-shadow: 0 4px 20px rgb(4 77 64 / 0.35);
+  }
+  .modal header {
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: var(--color-blue-deep);
+    user-select: none;
+  }
+  .modal button.close-btn {
+    position: absolute;
+    top: 8px; right: 14px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    background: transparent;
+    border: none;
+    color: var(--color-gray-medium);
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  .modal button.close-btn:hover,
+  .modal button.close-btn:focus {
+    color: var(--color-red);
+  }
+
+  /* COMPARISON MODAL */
+  .comparison-table {
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+    border-collapse: collapse;
+  }
+  .comparison-table thead th {
+    padding: 10px 6px;
+    background: var(--color-mint);
+    color: var(--color-white);
+    font-weight: 700;
+    border: 1px solid var(--color-white);
+    user-select: none;
+    text-align: center;
+  }
+  .comparison-table tbody td {
+    padding: 8px 5px;
+    border: 1px solid var(--color-gray-light);
+    text-align: center;
+    vertical-align: middle;
+  }
+  .comparison-table tbody tr:nth-child(odd) {
+    background: var(--color-faint-bkg);
+  }
+  .comparison-table img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 6px;
+  }
+  .comparison-table .highlight {
+    background-color: var(--color-coral);
+    color: var(--color-white);
+    font-weight: 700;
+  }
+
+  /* LOGIN MODAL */
+  .login-content label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: var(--color-blue-deep);
+  }
+  .login-content input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1.5px solid var(--color-gray-light);
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  .login-content button {
+    width: 100%;
+    background-color: var(--color-coral);
+    padding: 12px 0;
+    font-weight: 700;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-size: 1rem;
+    border: none;
+    margin-bottom: 12px;
+  }
+  .login-content button:hover,
+  .login-content button:focus {
+    background-color: #ff5530;
+  }
+  .login-content .fake-facebook {
+    background: #1877f2;
+    box-shadow: 0 3px 6px rgb(24 119 242 / 0.7);
+  }
+  .login-content .fake-facebook:hover,
+  .login-content .fake-facebook:focus {
+    background: #145dbf;
+  }
+  .login-message {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--color-gray-medium);
+    text-align: center;
+  }
+
+  /* CHECKOUT MODAL */
+  .checkout-form label {
+    font-weight: 700;
+    color: var(--color-blue-deep);
+    display: block;
+    margin: 12px 0 6px;
+  }
+  .checkout-form input, .checkout-form select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border-radius: 14px;
+    border: 1.7px solid var(--color-gray-light);
+    color: var(--color-blue-deep);
+    transition: border-color 0.3s ease;
+  }
+  .checkout-form input:focus,
+  .checkout-form select:focus {
+    outline: none;
+    border-color: var(--color-mint);
+  }
+  .checkout-options {
+    margin-top: 14px;
+  }
+  .checkout-option {
+    margin-bottom: 12px;
+    user-select: none;
+  }
+  .checkout-option label {
+    cursor: pointer;
+    color: var(--color-blue-deep);
+    font-weight: 700;
+  }
+  .checkout-option input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+  }
+  .checkout-button {
+    margin-top: 20px;
+    background-color: var(--color-coral);
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    width: 100%;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 5px 14px rgb(255 111 81 / 0.7);
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .checkout-button:hover,
+  .checkout-button:focus {
+    background-color: #ff5530;
+  }
+  .checkout-factura {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+  .checkout-factura input {
+    transform: scale(1.1);
+    margin-right: 6px;
+  }
+
+  /* CONFIRMATION MODAL */
+  .confirmation-content p {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-mint);
+    margin: 8px 0 12px;
+    text-align: center;
+  }
+  .confirmation-content strong {
+    font-weight: 900;
+  }
+  .confirmation-guide {
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* SUBSCRIPTION POPUP */
+  #subscribe-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-white);
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgb(4 77 64 / 0.6);
+    width: 90vw;
+    max-width: 380px;
+    padding: 22px 20px 28px;
+    z-index: 1900;
+    display: none;
+  }
+  #subscribe-popup.active {
+    display: block;
+  }
+  #subscribe-popup h4 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--color-blue-deep);
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  #subscribe-popup input[type="email"] {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    border: 1.7px solid var(--color-gray-light);
+    font-size: 1rem;
+    color: var(--color-blue-deep);
+    margin-bottom: 14px;
+  }
+  #subscribe-popup input[type="email"]:focus {
+    outline: none;
+    border-color: var(--color-mint);
+  }
+  #subscribe-popup button {
+    background-color: var(--color-coral);
+    color: var(--color-white);
+    width: 100%;
+    font-weight: 800;
+    border-radius: 22px;
+    padding: 12px 0;
+    border: none;
+    box-shadow: 0 4px 14px rgb(255 111 81 / 0.7);
+    font-size: 1.1rem;
+    user-select: none;
+  }
+  #subscribe-popup button:hover,
+  #subscribe-popup button:focus {
+    background-color: #ff5530;
+  }
+  #subscribe-popup .close-popup {
+    position: absolute;
+    top: 10px; right: 14px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    background: transparent;
+    border: none;
+    color: var(--color-gray-medium);
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  #subscribe-popup .close-popup:hover,
+  #subscribe-popup .close-popup:focus {
+    color: var(--color-red);
+  }
+  #subscribe-msg {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--color-green-success);
+    text-align: center;
+    margin-top: 6px;
+    user-select: none;
+  }
+
+  /* FAQ Section */
+  section.faq {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 16px 16px 24px;
+    user-select: none;
+  }
+  section.faq h3 {
+    font-weight: 900;
+    font-size: 1.35rem;
+    text-align: center;
+    color: var(--color-blue-deep);
+    margin-bottom: 28px;
+  }
+  .faq-item {
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--color-gray-light);
+  }
+  .faq-question {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-mint);
+    padding: 12px 10px;
+    position: relative;
+  }
+  .faq-question::after {
+    content: "▼";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    transition: transform 0.4s ease;
+    color: var(--color-coral);
+  }
+  .faq-question.active::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .faq-answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    color: var(--color-blue-deep);
+    font-size: 0.9rem;
+    padding: 0 8px;
+  }
+  .faq-answer.open {
+    max-height: 180px;
+    margin-bottom: 10px;
+  }
+  .faq-contact {
+    text-align: center;
+  }
+  .faq-contact strong {
+    display: block;
+    margin-top: 10px;
+    color: var(--color-mint);
+    font-weight: 900;
+  }
+  .faq-contact a {
+    color: var(--color-coral);
+  }
+
+  /* ASSISTANT FLOAT BUTTON */
+  #bot-assistant-btn {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--color-mint);
+    border: none;
+    box-shadow: 0 4px 12px rgb(75 195 151 / 0.8);
+    color: var(--color-white);
+    font-size: 1.7rem;
+    cursor: pointer;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #bot-assistant-btn:hover,
+  #bot-assistant-btn:focus {
+    background-color: #3db774;
+  }
+
+  /* ASSISTANT CHAT MODAL */
+  #bot-assistant-modal {
+    position: fixed;
+    bottom: 90px;
+    right: 18px;
+    width: 320px;
+    max-width: 90vw;
+    max-height: 450px;
+    background-color: var(--color-white);
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgb(4 77 64 / 0.6);
+    z-index: 2001;
+    display: none;
+    flex-direction: column;
+  }
+  #bot-assistant-modal.active {
+    display: flex;
+  }
+  #bot-assistant-modal header {
+    background-color: var(--color-mint);
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 18px 18px 0 0;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #bot-assistant-modal header button.close-bot {
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  #bot-assistant-modal .chat-content {
+    flex-grow: 1;
+    padding: 12px 16px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    color: var(--color-blue-deep);
+  }
+  .bot-msg {
+    margin-bottom: 12px;
+    background: var(--color-faint-bkg);
+    border-radius: 14px;
+    padding: 8px 12px;
+  }
+  .bot-msg a {
+    color: var(--color-coral);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #bot-assistant-modal footer {
+    display: flex;
+    border-top: 1px solid var(--color-gray-light);
+    padding: 8px 12px;
+    gap: 10px;
+  }
+  #bot-assistant-modal input[type="text"] {
+    flex-grow: 1;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 8px 14px;
+    border: 1.5px solid var(--color-gray-light);
+    color: var(--color-blue-deep);
+  }
+  #bot-assistant-modal input[type="text"]:focus {
+    outline: none;
+    border-color: var(--color-mint);
+  }
+  #bot-assistant-modal button.send-btn {
+    background-color: var(--color-mint);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    border: none;
+    color: var(--color-white);
+    font-weight: 700;
+  }
+  #bot-assistant-modal button.send-btn:hover,
+  #bot-assistant-modal button.send-btn:focus {
+    background-color: #3db774;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: var(--color-blue-deep);
+    color: var(--color-white);
+    padding: 28px 20px 28px;
+    margin-top: auto;
+    user-select: none;
+  }
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  footer h4 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--color-mint);
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+  }
+  footer nav ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  footer nav ul li {
+    margin-bottom: 10px;
+  }
+  footer nav ul li a {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  footer nav ul li a:hover,
+  footer nav ul li a:focus {
+    color: var(--color-mint);
+  }
+  footer .legal-modal-content {
+    color: var(--color-blue-deep);
+    background-color: var(--color-white);
+    padding: 14px 22px;
+    border-radius: 14px;
+    max-width: 600px;
+    margin: 24px auto 24px auto;
+    font-size: 0.9rem;
+    height: 360px;
+    overflow-y: auto;
+  }
+  footer .legal-modal-content h5 {
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: var(--color-blue-deep);
+  }
+  footer .legal-modal-close {
+    display: block;
+    color: var(--color-coral);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 12px;
+  }
+  footer .legal-modal-close:hover,
+  footer .legal-modal-close:focus {
+    color: #ff5530;
+  }
+  footer .fiscal-info {
+    font-size: 0.93rem;
+    max-width: 320px;
+    color: #99e2c2;
+    user-select: text;
+    font-weight: 700;
+  }
+  footer .social-icons a {
+    margin-right: 12px;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    transition: color 0.3s ease;
+  }
+  footer .social-icons a:hover,
+  footer .social-icons a:focus {
+    color: var(--color-mint);
+  }
+
+  /* Media queries */
+  @media(min-width: 768px) {
+    header {
+      padding: 0 24px;
+      height: 72px;
+    }
+    .menu-btn {
+      display: none; /* show nav inline */
+    }
+    nav {
+      position: static;
+      border: none;
+      box-shadow: none;
+      max-height: none !important;
+      background: transparent;
+      padding: 0;
+      margin-left: 24px;
+    }
+    nav ul {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    nav ul li button {
+      border: none;
+      padding: 8px 15px;
+      color: var(--color-blue-deep);
+      background: transparent;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav ul li button.active,
+    nav ul li button:hover {
+      color: var(--color-mint);
+      border-bottom: 3px solid var(--color-mint);
+      background: transparent;
+      border-radius: 0;
+    }
+    .header-search {
+      max-width: 420px;
+      margin-left: 32px;
+    }
+    .header-icons button {
+      width: 42px;
+      height: 42px;
+      font-size: 1.4rem;
+    }
+    main > section.hero {
+      text-align: left;
+      padding-left: 48px;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      max-width: 480px;
+      margin-left: 0;
+    }
+    .hero p {
+      max-width: 500px;
+      font-size: 1.2rem;
+      margin: 12px 0 32px;
+    }
+    .hero .price-from {
+      font-size: 1.3rem;
+    }
+    .hero .hero-image {
+      right: 48px;
+      max-width: 500px;
+      opacity: 0.4;
+    }
+    .filters-bar {
+      padding: 16px 28px;
+      justify-content: flex-start;
+      gap: 22px;
+    }
+    .compare-btn {
+      align-self: center;
+      order: 99;
+      font-size: 1.1rem;
+      min-width: 220px;
+    }
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    section.testimonials {
+      padding: 52px 28px 56px;
+    }
+    section.testimonials .stats {
+      justify-content: flex-start;
+      gap: 48px;
+    }
+    .review-cards {
+      flex-wrap: nowrap;
+      padding-bottom: 0;
+    }
+    .review-card {
+      min-width: 280px;
+    }
+    #cart-drawer {
+      width: 360px;
+      max-width: 400px;
+      padding: 24px 22px 32px;
+    }
+    #bot-assistant-modal {
+      bottom: 120px;
+      width: 360px;
+      max-width: 380px;
+      max-height: 520px;
+    }
+    footer .container {
+      justify-content: space-between;
+      gap: 48px;
+    }
+    footer .social-icons {
+      margin-top: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<header role="banner" aria-label="Cabecera principal MintX">
+  <a href="#" class="logo" aria-label="MintX, página principal">MintX</a>
+
+  <input type="checkbox" id="menu-toggle" aria-label="Toggle menú principal" />
+  <label for="menu-toggle" class="menu-btn" tabindex="0" aria-controls="primary-navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav id="primary-navigation" role="navigation" aria-label="Menú de categorías">
+    <ul>
+      <li><button type="button" class="nav-filter-btn active" data-filter="todos" aria-current="page">Todos</button></li>
+      <li><button type="button" class="nav-filter-btn" data-filter="digestivos">Digestivos</button></li>
+      <li><button type="button" class="nav-filter-btn" data-filter="frescos">Frescos</button></li>
+      <li><button type="button" class="nav-filter-btn" data-filter="frutales">Frutales</button></li>
+      <li><button type="button" class="nav-filter-btn" data-filter="combos">Combos</button></li>
+    </ul>
+  </nav>
+
+  <div class="header-search" role="search">
+    <input type="search" aria-label="Buscar productos MintX" id="product-search" placeholder="Buscar sabor..." autocomplete="off" />
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <div id="autocomplete-list" class="autocomplete-list" role="listbox" aria-live="polite" aria-labelledby="product-search"></div>
+  </div>
+
+  <div class="header-icons" aria-label="Iconos de acciones principales">
+    <button id="btn-wishlist" aria-label="Lista de deseos" aria-haspopup="true" aria-controls="wishlist-counter" aria-expanded="false">
+      <svg class="heart-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7.1-4.8-7.1-11.3c0-3.6 2.9-6.5 6.7-6.5 2.3 0 3.6 1.2 4.4 2.3.8-1.1 2-2.3 4.4-2.3 3.8 0 6.7 2.9 6.7 6.5 0 6.5-7.1 11.3-7.1 11.3z" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span class="icon-counter" id="wishlist-counter" aria-live="polite" aria-atomic="true">0</span>
+    </button>
+    <button id="btn-user" aria-label="Cuenta de usuario" aria-haspopup="dialog" aria-controls="login-modal" aria-expanded="false">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a7.5 7.5 0 0 1 13 0"/></svg>
+    </button>
+    <button id="btn-contact" aria-label="Contacto y soporte">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7"/><path d="M7 10l5 5 5-5"/><path d="M12 10V4"/></svg>
+    </button>
+    <button id="btn-cart" aria-label="Carrito de compras" aria-haspopup="dialog" aria-controls="cart-drawer" aria-expanded="false">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="icon-counter" id="cart-counter" aria-live="polite" aria-atomic="true">0</span>
+    </button>
+  </div>
+</header>
+
+<main role="main" aria-labelledby="main-title">
+  <section class="hero" aria-label="Beneficios de los chicles MintX">
+    <h1 id="main-title">Chicles MintX<br />Funcionales y Homeopáticos</h1>
+    <p>100% endulzados con Xilitol, aptos para diabéticos y personas que evitan el azúcar.<br />Ayudan a la digestión, reducen sensibilidad dental y limpian tus dientes.</p>
+    <div class="price-from" tabindex="0">Desde <strong>$30 MXN</strong> por paquete de 14 piezas</div>
+    <button class="cta-buy" id="hero-buy-btn" aria-label="Comprar ahora chicles MintX">Comprar ahora</button>
+    <img src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?auto=format&fit=crop&w=600&q=70" alt="Imagen representativa de frescura y salud bucal con chicles MintX" class="hero-image" aria-hidden="true" />
+  </section>
+
+  <section class="filters-bar" aria-label="Barra de filtros y ordenamiento">
+    <div class="filter-group" role="group" aria-labelledby="filter-sabor-label">
+      <label id="filter-sabor-label" for="filter-sabor">Sabor/Color:</label>
+      <select id="filter-sabor" aria-describedby="filter-sabor-description" aria-controls="product-list">
+        <option value="todos" selected>Todos</option>
+        <option value="cereza">Cereza</option>
+        <option value="fresa">Fresa</option>
+        <option value="uva">Uva</option>
+        <option value="menta">Menta</option>
+        <option value="hierbabuena">Hierbabuena</option>
+        <option value="mora azul">Mora Azul</option>
+      </select>
+      <span id="filter-sabor-description" class="sr-only">Selecciona un sabor o color para filtrar los productos</span>
+    </div>
+
+    <div class="filter-group" role="group" aria-labelledby="filter-price-label">
+      <label id="filter-price-label" for="filter-price">Precio (MXN):</label>
+      <input type="range" id="filter-price" min="0" max="100" step="1" aria-describedby="filter-price-desc" />
+      <span class="range-label" id="filter-price-desc">Máximo $<span id="filter-price-value">100</span></span>
+    </div>
+
+    <div class="filter-group" role="group" aria-labelledby="filter-beneficio-label">
+      <label id="filter-beneficio-label">Beneficios:</label>
+      <div class="filter-checkboxes" aria-describedby="filter-beneficio-description">
+        <label><input type="checkbox" name="beneficio" value="digestión" /> Digestión</label>
+        <label><input type="checkbox" name="beneficio" value="sensibilidad" /> Sensibilidad dental</label>
+      </div>
+      <span id="filter-beneficio-description" class="sr-only">Selecciona beneficios para filtrar</span>
+    </div>
+
+    <div class="filter-group" role="group" aria-labelledby="filter-presentacion-label">
+      <label id="filter-presentacion-label">Presentación:</label>
+      <div class="filter-checkboxes" aria-describedby="filter-presentacion-description">
+        <label><input type="checkbox" name="presentacion" value="14 piezas" /> 14 piezas</label>
+        <label><input type="checkbox" name="presentacion" value="caja ahorro" /> Caja ahorro</label>
+      </div>
+      <span id="filter-presentacion-description" class="sr-only">Selecciona presentación para filtrar</span>
+    </div>
+
+    <div class="filter-group" role="group" aria-labelledby="order-label">
+      <label id="order-label" for="order-select">Ordenar por:</label>
+      <select id="order-select" aria-controls="product-list">
+        <option value="relevancia" selected>Relevancia</option>
+        <option value="masvendidos">Más vendidos</option>
+        <option value="menorprecio">Menor precio</option>
+      </select>
+    </div>
+
+    <button id="btn-compare" class="compare-btn" aria-disabled="true" disabled aria-label="Comparar sabores seleccionados">Comparar seleccionados</button>
+  </section>
+
+  <section class="catalog" aria-label="Catálogo de productos MintX">
+    <div class="container">
+      <div class="products-grid" id="product-list" role="list" aria-live="polite" aria-relevant="additions removals"></div>
+    </div>
+  </section>
+
+  <section class="testimonials" aria-label="Reseñas y prueba social MintX">
+    <div class="stats" role="region" aria-live="polite" aria-atomic="true" aria-label="Clientes satisfechos y calificación promedio">
+      <div class="stat-item">
+        <strong>+10,000</strong>
+        Clientes satisfechos en México
+      </div>
+      <div class="stat-item" aria-label="Calificación promedio 4.9 estrellas">
+        <div class="stat-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        4.9 estrellas promedio
+      </div>
+    </div>
+    <div class="review-cards" tabindex="0" aria-label="Testimonios de clientes">
+      <article class="review-card" role="listitem">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de perfil de Ana, cliente satisfecho" class="review-photo" />
+        <div class="review-content">
+          <div class="review-name">Ana G.</div>
+          <div class="review-text">"Desde que uso MintX, mi digestión ha mejorado mucho y mis dientes están menos sensibles. ¡Recomendado!"</div>
+        </div>
+      </article>
+      <article class="review-card" role="listitem">
+        <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Foto de perfil de Carlos, cliente satisfecho" class="review-photo" />
+        <div class="review-content">
+          <div class="review-name">Carlos M.</div>
+          <div class="review-text">"Me encanta la frescura natural sin azúcar. Además, ya no sufro tanto con mis dientes sensibles."</div>
+        </div>
+      </article>
+      <article class="review-card" role="listitem">
+        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Foto de perfil de Sofia, cliente satisfecha" class="review-photo" />
+        <div class="review-content">
+          <div class="review-name">Sofía L.</div>
+          <div class="review-text">"Los sabores son increíbles y realmente ayudan a mi digestión. Perfecto para cuidar mi salud bucal."</div>
+        </div>
+      </article>
+    </div>
+    <div class="logos-bar" aria-label="Sellos de confianza y avales">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Logo_of_Profeco.svg/120px-Logo_of_Profeco.svg.png" alt="Logo PROFECO" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mercado_Pago.svg/120px-Mercado_Pago.svg.png" alt="Logo Mercado Pago" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Visa_Inc._logo.svg/120px-Visa_Inc._logo.svg.png" alt="Logo Visa" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mastercard_2019_logo.svg/120px-Mastercard_2019_logo.svg.png" alt="Logo Mastercard" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OXXO_logo.svg/120px-OXXO_logo.svg.png" alt="Logo OXXO Pay" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sitio_Seguro_SSL_logo.svg/120px-Sitio_Seguro_SSL_logo.svg.png" alt="Logo Sitio Seguro SSL" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Logo-Avalado-por-Especialistas.svg/140px-Logo-Avalado-por-Especialistas.svg.png" alt="Avalado por especialistas" />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo" aria-label="Pie de página MintX con enlaces legales y datos fiscales">
+    <div class="container">
+      <nav aria-label="Mapa del sitio">
+        <h4>Mapa del sitio</h4>
+        <ul>
+          <li><a href="#" class="footer-link" data-modal="privacy-policy">Aviso de privacidad</a></li>
+          <li><a href="#" class="footer-link" data-modal="terms-conditions">Términos y condiciones</a></li>
+          <li><a href="#" class="footer-link" data-modal="shipping-returns">Políticas de envío y devoluciones</a></li>
+        </ul>
+      </nav>
+      <section class="fiscal-info" aria-label="Datos fiscales de MintX México">
+        <h4>Datos fiscales MintX México</h4>
+        <p>MintX SA de CV<br />RFC: MINT210323AB1<br />Dirección: Av. Salud 123, Tlalnepantla, México, Estado de México, CP 54000</p>
+      </section>
+      <section class="social-icons" aria-label="Redes sociales de MintX">
+        <h4>Síguenos</h4>
+        <a href="https://facebook.com/mintxmx" target="_blank" rel="noopener" aria-label="Facebook MintX">📘</a>
+        <a href="https://instagram.com/mintxmx" target="_blank" rel="noopener" aria-label="Instagram MintX">📸</a>
+        <a href="https://twitter.com/mintxmx" target="_blank" rel="noopener" aria-label="Twitter MintX">🐦</a>
+      </section>
+    </div>
+  </footer>
+
+  <!-- MODALES -->
+
+  <!-- Wishlist modal (simulated) -->
+  <div id="wishlist-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="wishlist-title" tabindex="-1">
+    <div class="modal" role="document">
+      <header id="wishlist-title">Lista de deseos</header>
+      <button class="close-btn" aria-label="Cerrar lista de deseos" title="Cerrar">&times;</button>
+      <p id="wishlist-empty-msg" style="text-align:center;color:#666;">No hay productos en tu lista de deseos.</p>
+      <ul id="wishlist-items" style="list-style:none;padding-left:0;max-height:240px;overflow-y:auto;margin-top:10px;"></ul>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="login-title" tabindex="-1">
+    <div class="modal" role="document">
+      <header id="login-title">Iniciar sesión</header>
+      <button class="close-btn" aria-label="Cerrar inicio de sesión" title="Cerrar">&times;</button>
+      <form class="login-content" aria-describedby="login-desc" novalidate>
+        <label for="login-email">Correo electrónico</label>
+        <input type="email" id="login-email" name="email" placeholder="tu@correo.com" autocomplete="email" required />
+        <label for="login-password">Contraseña</label>
+        <input type="password" id="login-password" name="password" placeholder="********" required minlength="6" />
+        <button type="submit" aria-label="Iniciar sesión">Entrar</button>
+        <button type="button" class="fake-facebook" aria-label="Continuar con Facebook">Continuar con Facebook</button>
+        <p id="login-desc" class="login-message">Esta es una simulación de inicio de sesión, no se autentifican datos reales.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="contact-title" tabindex="-1">
+    <div class="modal" role="document">
+      <header id="contact-title">Contacto y soporte</header>
+      <button class="close-btn" aria-label="Cerrar contacto" title="Cerrar">&times;</button>
+      <p>Teléfono: <a href="tel:+525555123456" aria-label="Llamar al teléfono 55 5512 3456">55 5512 3456</a></p>
+      <p>Correo: <a href="mailto:soporte@mintx.mx" aria-label="Enviar correo a soporte@mintx.mx">soporte@mintx.mx</a></p>
+      <p>Horario: Lunes a Viernes, 9:00 a 18:00 hrs</p>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <aside id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" tabindex="-1">
+    <h3 id="cart-drawer-title">Carrito de compras</h3>
+    <div id="cart-items" aria-live="polite" aria-relevant="additions removals"></div>
+
+    <form id="coupon-form" aria-label="Aplicar cupón de descuento">
+      <label for="coupon-code">Código de descuento</label>
+      <input type="text" id="coupon-code" name="coupon" placeholder="Ejemplo: MINTX10" aria-describedby="coupon-help" autocomplete="off" />
+      <button type="submit">Aplicar</button>
+      <p id="coupon-help" style="color:#3bb165; font-size:0.8rem; margin-top:2px;" aria-live="assertive" aria-atomic="true"></p>
+    </form>
+
+    <form class="shipping-calculator" aria-label="Calculadora de envío">
+      <label for="shipping-zip">Código Postal</label>
+      <input type="text" id="shipping-zip" name="zipcode" maxlength="5" pattern="[0-9]{5}" placeholder="54000" autocomplete="postal-code" aria-describedby="shipping-info" required />
+      <button type="button" id="btn-calculate-shipping">Calcular envío</button>
+      <p id="shipping-info" style="font-size:0.8rem; color: #044d40; margin-top: 4px;" aria-live="polite"></p>
+    </form>
+
+    <section class="cart-summary" aria-label="Resumen de precios">
+      <div><span>Subtotal:</span><span id="cart-subtotal">$0 MXN</span></div>
+      <div><span>Descuento:</span><span id="cart-discount">-$0 MXN</span></div>
+      <div><span>Envío:</span><span id="cart-shipping">$0 MXN</span></div>
+      <div class="total"><span>Total:</span><span id="cart-total">$0 MXN</span></div>
+    </section>
+    <div class="cart-actions">
+      <button class="btn-checkout" id="btn-go-checkout" aria-label="Ir al proceso de pago" disabled>Procesar pago</button>
+      <button class="btn-close" id="btn-close-cart" aria-label="Cerrar carrito">Cerrar</button>
+    </div>
+  </aside>
+
+  <!-- Compare Modal -->
+  <div id="compare-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="compare-title" tabindex="-1">
+    <div class="modal" role="document">
+      <header id="compare-title">Comparar sabores MintX</header>
+      <button class="close-btn" aria-label="Cerrar comparación" title="Cerrar">&times;</button>
+      <table class="comparison-table" aria-describedby="comparison-desc">
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th id="compare-prod1">Sabor 1</th>
+            <th id="compare-prod2">Sabor 2</th>
+            <th id="compare-prod3">Sabor 3</th>
+            <th>Chicles con azúcar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ingredientes activos</td>
+            <td id="comp-ing1"></td>
+            <td id="comp-ing2"></td>
+            <td id="comp-ing3"></td>
+            <td>Xilitol ausente, azúcar común</td>
+          </tr>
+          <tr>
+            <td>Beneficios</td>
+            <td id="comp-ben1"></td>
+            <td id="comp-ben2"></td>
+            <td id="comp-ben3"></td>
+            <td>Solo sabor y dulzor, sin beneficios</td>
+          </tr>
+          <tr>
+            <td>Precio</td>
+            <td id="comp-price1"></td>
+            <td id="comp-price2"></td>
+            <td id="comp-price3"></td>
+            <td>Desde $28 MXN</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="checkout-title" tabindex="-1">
+    <div class="modal" role="document">
+      <header id="checkout-title">Confirmar compra</header>
+      <button class="close-btn" aria-label="Cerrar proceso de pago" title="Cerrar">&times;</button>
+      <form class="checkout-form" novalidate>
+        <label for="customer-name">Nombre completo</label>
+        <input type="text" id="customer-name" name="name" placeholder="Nombre y apellido(s)" autocomplete="name" required />
+        <label for="customer-phone">Teléfono</label>
+        <input type="tel" id="customer-phone" name="phone" placeholder="55 5555 5555" pattern="[0-9\s\-+()]{7,15}" autocomplete="tel" required />
+        <label for="customer-address">Dirección completa</label>
+        <input type="text" id="customer-address" name="address" placeholder="Calle, número, colonia, ciudad" autocomplete="street-address" required />
+        <label for="customer-zip">Código Postal</label>
+        <input type="text" id="customer-zip" name="zip" maxlength="5" pattern="[0-9]{5}" placeholder="54000" autocomplete="postal-code" required />
+
+        <button type="button" class="fake-facebook" aria-label="Continuar con Facebook" style="margin-top: 16px;">Continuar con Facebook</button>
+
+        <div class="checkout-factura">
+          <label><input type="checkbox" id="cfdi-checkbox" name="cfdi" /> ¿Requieres factura fiscal (CFDI)?</label>
+        </div>
+
+        <fieldset class="checkout-options" aria-label="Seleccionar forma de pago" required>
+          <legend>Forma de pago</legend>
+          <div class="checkout-option">
+            <input type="radio" id="pay-card" name="payment" value="tarjeta" required />
+            <label for="pay-card">Tarjeta de crédito/débito</label>
+          </div>
+          <div class="checkout-option">
+            <input type="radio" id="pay-mercado" name="payment" value="mercadopago" />
+            <label for="pay-mercado">Mercado Pago</label>
+          </div>
+          <div class="checkout-option">
+            <input type="radio" id="pay-oxxo" name="payment" value="oxxopay" />
+            <label for="pay-oxxo">OXXO Pay (pago en tienda)</label>
+          </div>
+          <div class="checkout-option">
+            <input type="radio" id="pay-spei" name="payment" value="spei" />
+            <label for="pay-spei">Transferencia SPEI</label>
+          </div>
+          <div class="checkout-option">
+            <input type="radio" id="pay-cash" name="payment" value="efectivo" />
+            <label for="pay-cash">Pago en efectivo contra entrega</label>
+          </div>
+        </fieldset>
+
+        <div id="payment-extra-info" style="margin-top:12px; font-size:0.9rem; color: var(--color-blue-deep);"></div>
+
+        <button type="submit" class="checkout-button">Finalizar compra</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmation-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="confirmation-title" tabindex="-1">
+    <div class="modal" role="document">
+      <header id="confirmation-title">Pedido confirmado</header>
+      <button class="close-btn" aria-label="Cerrar confirmación de compra" title="Cerrar">&times;</button>
+      <div class="confirmation-content" tabindex="0">
+        <p>¡Gracias por tu compra!</p>
+        <p>Tu número de orden es: <strong id="order-number"></strong></p>
+        <p class="confirmation-guide">
+          Puedes rastrear tu paquete con el siguiente código de guía:<br />
+          <strong id="tracking-code"></strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBSCRIPTION POPUP -->
+  <section id="subscribe-popup" role="dialog" aria-modal="true" aria-labelledby="subscribe-title" tabindex="-1">
+    <button class="close-popup" aria-label="Cerrar oferta de suscripción" title="Cerrar">&times;</button>
+    <h4 id="subscribe-title">¡10% de descuento en tu primera compra!</h4>
+    <input type="email" id="subscribe-email" placeholder="Tu correo electrónico" aria-label="Correo para suscripción a descuentos" autocomplete="email" />
+    <button id="subscribe-btn" aria-label="Suscribirse al descuento">Suscribirme</button>
+    <div id="subscribe-msg" aria-live="polite"></div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="faq" aria-label="Preguntas frecuentes MintX">
+    <h3>Preguntas frecuentes</h3>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">¿Es apto para diabéticos?</button>
+      <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn" hidden>
+        Sí, nuestros chicles MintX están endulzados 100% con xilitol, un endulzante natural que no afecta los niveles de glucosa en sangre, por lo que son seguros para personas diabéticas.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">¿Qué hace la Nux vomica y Calcarea Fluorica?</button>
+      <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn" hidden>
+        Nux vomica ayuda a mejorar la digestión y alivia malestares estomacales, mientras que Calcarea Fluorica fortalece el esmalte dental y reduce la sensibilidad dental, aportando beneficios homeopáticos en nuestros chicles.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">¿Cómo calculo el costo de envío?</button>
+      <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn" hidden>
+        Puedes ingresar tu código postal en el carrito y calcular el envío. Ofrecemos envío gratis en compras superiores a $299 MXN, y una tarifa estándar de $79 MXN para compras menores.
+      </div>
+    </div>
+    <div class="faq-contact">
+      <p>¿Tienes más dudas?</p>
+      <strong>Teléfono:</strong> <a href="tel:+525555123456">55 5512 3456</a><br />
+      <strong>Correo:</strong> <a href="mailto:soporte@mintx.mx">soporte@mintx.mx</a>
+    </div>
+  </section>
+</main>
+
+<!-- BOT ASISTENTE -->
+<button id="bot-assistant-btn" aria-label="Abrir asistente MintX" aria-haspopup="dialog" aria-controls="bot-assistant-modal" aria-expanded="false" title="Abrir asistente de ayuda">💬</button>
+
+<div id="bot-assistant-modal" role="dialog" aria-modal="true" aria-labelledby="bot-assistant-title" tabindex="-1">
+  <header>
+    <span id="bot-assistant-title">Asistente MintX</span>
+    <button class="close-bot" aria-label="Cerrar asistente">×</button>
+  </header>
+  <div class="chat-content" id="bot-chat" aria-live="polite" aria-relevant="additions"></div>
+  <footer>
+    <input type="text" id="bot-input" placeholder="Escribe tu pregunta..." aria-label="Escribe tu pregunta para el asistente MintX" />
+    <button class="send-btn" aria-label="Enviar mensaje">&#9658;</button>
+  </footer>
+</div>
+
+<script>
+(() => {
+  // Datos del catálogo, sabores y combos según info proporcionada
+  const catalog = [
+    {
+      id: 'cereza14',
+      name: 'Cereza',
+      category: 'frutales',
+      benefits: ['digestión'],
+      presentation: ['14 piezas'],
+      price: 30,
+      oldPrice: 35,
+      discountPercent: 14,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1579638460826-2e4a5e854452?auto=format&fit=crop&w=400&q=80',
+      bestSeller: true,
+    },
+    {
+      id: 'fresa14',
+      name: 'Fresa',
+      category: 'frutales',
+      benefits: ['digestión'],
+      presentation: ['14 piezas'],
+      price: 30,
+      oldPrice: 33,
+      discountPercent: 9,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=400&q=80',
+      bestSeller: false,
+    },
+    {
+      id: 'uva14',
+      name: 'Uva',
+      category: 'frutales',
+      benefits: ['digestión'],
+      presentation: ['14 piezas'],
+      price: 30,
+      oldPrice: 33,
+      discountPercent: 9,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1503618789080-7c381ee2aff3?auto=format&fit=crop&w=400&q=80',
+      bestSeller: false,
+    },
+    {
+      id: 'menta14',
+      name: 'Menta',
+      category: 'frescos',
+      benefits: ['sensibilidad'],
+      presentation: ['14 piezas'],
+      price: 30,
+      oldPrice: 36,
+      discountPercent: 16,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
+      bestSeller: true,
+    },
+    {
+      id: 'hierbabuena14',
+      name: 'Hierbabuena',
+      category: 'frescos',
+      benefits: ['sensibilidad'],
+      presentation: ['14 piezas'],
+      price: 30,
+      oldPrice: 36,
+      discountPercent: 16,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80',
+      bestSeller: false,
+    },
+    {
+      id: 'moraazul14',
+      name: 'Mora Azul',
+      category: 'frutales',
+      benefits: ['digestión'],
+      presentation: ['14 piezas'],
+      price: 30,
+      oldPrice: 33,
+      discountPercent: 9,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1508042636619-1e4f266599a6?auto=format&fit=crop&w=400&q=80',
+      bestSeller: false,
+    },
+    // Combos Example
+    {
+      id: 'combo-frescos',
+      name: 'Combo Frescos MintX (Menta + Hierbabuena)',
+      category: 'combos',
+      benefits: ['sensibilidad'],
+      presentation: ['Caja ahorro'],
+      price: 85,
+      oldPrice: 105,
+      discountPercent: 19,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
+      bestSeller: true,
+    },
+    {
+      id: 'combo-frutales',
+      name: 'Combo Frutales MintX (Cereza + Fresa + Uva + Mora Azul)',
+      category: 'combos',
+      benefits: ['digestión'],
+      presentation: ['Caja ahorro'],
+      price: 110,
+      oldPrice: 135,
+      discountPercent: 18,
+      ingredients: ['Xilitol', 'Nux vomica', 'Calcarea Fluorica'],
+      imgURL: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80',
+      bestSeller: false,
+    },
+  ];
+
+  /** UTILITIES ***********************************************************************/
+
+  // Format money in MXN style
+  const formatMoney = (num) => {
+    return '$' + num.toLocaleString('es-MX', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' MXN';
+  };
+
+  // Create star rating (4.9 shown in testimonial)
+  const starsHtml = (rating) => {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating - fullStars >= 0.5;
+    let stars = '⭐'.repeat(fullStars);
+    if (halfStar) stars += '⭐';
+    return stars;
+  };
+
+  // Debounce helper
+  function debounce(fn, delay) {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => fn.apply(this, args), delay);
+    }
+  }
+
+  /** STATE *************************************************************************/
+
+  let filters = {
+    category: 'todos',  // filter from nav menu, synced with select sabor if possible
+    sabor: 'todos',
+    maxPrice: 100,
+    benefits: new Set(),
+    presentations: new Set(),
+    order: 'relevancia', // relevancia, masvendidos, menorprecio
+  };
+
+  let wishlist = new Set();
+  let cart = {};
+  let coupon = null;
+  let shippingCost = 0;
+
+  /** PERSISTENCE *********************************************************************/
+  // To keep wishlist and cart across page load, using localStorage
+
+  const persistWishlist = () => {
+    localStorage.setItem('mintx_wishlist', JSON.stringify(Array.from(wishlist)));
+  };
+
+  const persistCart = () => {
+    localStorage.setItem('mintx_cart', JSON.stringify(cart));
+  };
+
+  const loadWishlistStorage = () => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('mintx_wishlist'));
+      if (Array.isArray(saved)) {
+        wishlist = new Set(saved);
+      }
+    } catch {}
+  };
+
+  const loadCartStorage = () => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('mintx_cart'));
+      if (saved && typeof saved === 'object') {
+        cart = saved;
+      }
+    } catch {}
+  };
+
+  /** RENDERING ***********************************************************************/
+
+  // Update counters on icons
+  function updateCounters() {
+    const wishlistCount = wishlist.size;
+    const cartCount = Object.values(cart).reduce((sum, item) => sum + item.qty, 0);
+    document.getElementById('wishlist-counter').textContent = wishlistCount;
+    document.getElementById('cart-counter').textContent = cartCount;
+
+    // Update wishlist aria-expanded if open
+    wishlistModalToggle(false);
+    updateCompareButtonState();
+    updateCheckoutButtonState();
+  }
+
+  // Render product cards filtered / sorted
+  function renderProducts() {
+    let filtered = [...catalog];
+
+    // Filter category: "todos" shows all except combos if combos not selected
+    if (filters.category !== 'todos') {
+      filtered = filtered.filter(p => p.category === filters.category);
+    }
+
+    // Filter sabor/color select
+    if (filters.sabor !== 'todos') {
+      filtered = filtered.filter(p => p.name.toLowerCase() === filters.sabor.toLowerCase());
+    }
+
+    // Filter max price
+    filtered = filtered.filter(p => p.price <= filters.maxPrice);
+
+    // Filter benefits
+    if (filters.benefits.size > 0) {
+      filtered = filtered.filter(p => {
+        return Array.from(filters.benefits).every(b => p.benefits.includes(b));
+      });
+    }
+
+    // Filter presentation
+    if (filters.presentations.size > 0) {
+      filtered = filtered.filter(p => {
+        return Array.from(filters.presentations).some(pres => p.presentation.includes(pres));
+      });
+    }
+
+    // Order
+    if (filters.order === 'masvendidos') {
+      filtered.sort((a,b) => (b.bestSeller === true ? 1 : 0) - (a.bestSeller === true ? 1 : 0));
+    } else if (filters.order === 'menorprecio') {
+      filtered.sort((a,b) => a.price - b.price);
+    } // Relevancia default: no re-order or leave order as is.
+
+    const container = document.getElementById('product-list');
+    container.innerHTML = '';
+
+    if (filtered.length === 0) {
+      const nores = document.createElement('p');
+      nores.textContent = 'No hay productos que coincidan con los filtros seleccionados.';
+      nores.style.color = '#666';
+      nores.style.fontWeight = '600';
+      nores.style.textAlign = 'center';
+      container.appendChild(nores);
+      return;
+    }
+
+    filtered.forEach(prod => {
+      const card = document.createElement('article');
+      card.className = 'product-card';
+      card.setAttribute('role', 'listitem');
+      card.setAttribute('data-id', prod.id);
+      card.setAttribute('tabindex', '0');
+
+      // Img & discount Tag
+      const photoDiv = document.createElement('div');
+      photoDiv.className = 'product-photo';
+      const img = document.createElement('img');
+      img.src = prod.imgURL;
+      img.alt = `${prod.name} chicles MintX`;
+      photoDiv.appendChild(img);
+      card.appendChild(photoDiv);
+
+      if (prod.discountPercent) {
+        const discTag = document.createElement('span');
+        discTag.className = 'discount-tag';
+        discTag.textContent = `-${prod.discountPercent}%`;
+        card.appendChild(discTag);
+      }
+
+      // Title
+      const title = document.createElement('h4');
+      title.className = 'product-title';
+      title.textContent = prod.name;
+      card.appendChild(title);
+
+      // Price
+      const priceWrap = document.createElement('div');
+      priceWrap.className = 'price-wrapper';
+      if (prod.oldPrice && prod.oldPrice > prod.price) {
+        const oldP = document.createElement('span');
+        oldP.className = 'old-price';
+        oldP.textContent = formatMoney(prod.oldPrice);
+        priceWrap.appendChild(oldP);
+      }
+      const offerP = document.createElement('span');
+      offerP.className = 'offer-price';
+      offerP.textContent = formatMoney(prod.price);
+      priceWrap.appendChild(offerP);
+      card.appendChild(priceWrap);
+
+      // Ingredients
+      const desc = document.createElement('p');
+      desc.className = 'product-desc';
+      desc.textContent = `${prod.ingredients.join(', ')}`;
+      card.appendChild(desc);
+
+      // Presentation selector (if multiple presentations available)
+      const presDiv = document.createElement('div');
+      presDiv.className = 'presentation-select';
+      const selectPres = document.createElement('select');
+      selectPres.setAttribute('aria-label', `Seleccionar presentación para ${prod.name}`);
+      prod.presentation.forEach(pres => {
+        const opt = document.createElement('option');
+        opt.value = pres;
+        opt.textContent = pres;
+        selectPres.appendChild(opt);
+      });
+      presDiv.appendChild(selectPres);
+      card.appendChild(presDiv);
+
+      // Actions: wishlist, compare checkbox, CTAs
+      const actionsDiv = document.createElement('div');
+      actionsDiv.className = 'product-actions';
+
+      // Wishlist icon (heart)
+      const heartBtn = document.createElement('button');
+      heartBtn.className = 'heart-btn';
+      heartBtn.setAttribute('aria-label', `Agregar ${prod.name} a lista de deseos`);
+      heartBtn.setAttribute('title', 'Agregar a lista de deseos');
+
+      const heartSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      heartSvg.setAttribute('class', 'heart-icon');
+      heartSvg.setAttribute('viewBox', '0 0 24 24');
+      heartSvg.setAttribute('aria-hidden', 'true');
+      heartSvg.setAttribute('focusable', 'false');
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', 'M12 21s-7.1-4.8-7.1-11.3c0-3.6 2.9-6.5 6.7-6.5 2.3 0 3.6 1.2 4.4 2.3.8-1.1 2-2.3 4.4-2.3 3.8 0 6.7 2.9 6.7 6.5 0 6.5-7.1 11.3-7.1 11.3z');
+      path.setAttribute('stroke-width', '2');
+      path.setAttribute('stroke-linejoin', 'round');
+      heartSvg.appendChild(path);
+      heartBtn.appendChild(heartSvg);
+      actionsDiv.appendChild(heartBtn);
+
+      // Compare checkbox
+      const compareLabel = document.createElement('label');
+      compareLabel.className = 'compare-checkbox';
+      compareLabel.setAttribute('title', `Seleccionar ${prod.name} para comparar`);
+      const compareInput = document.createElement('input');
+      compareInput.type = 'checkbox';
+      compareInput.className = 'compare-checkbox-input';
+      compareInput.setAttribute('aria-label', `Comparar ${prod.name}`);
+      compareLabel.appendChild(compareInput);
+      compareLabel.appendChild(document.createTextNode('Comparar'));
+      actionsDiv.appendChild(compareLabel);
+
+      // CTA buttons
+      const btnAddCart = document.createElement('button');
+      btnAddCart.className = 'btn-secondary';
+      btnAddCart.textContent = 'Agregar al carrito';
+      btnAddCart.setAttribute('aria-label', `Agregar ${prod.name} al carrito`);
+
+      const btnBuyNow = document.createElement('button');
+      btnBuyNow.className = 'btn-primary';
+      btnBuyNow.textContent = 'Comprar ahora';
+      btnBuyNow.setAttribute('aria-label', `Comprar ahora ${prod.name}`);
+
+      actionsDiv.appendChild(btnAddCart);
+      actionsDiv.appendChild(btnBuyNow);
+
+      card.appendChild(actionsDiv);
+
+      container.appendChild(card);
+
+      // Set heart fill if in wishlist
+      if (wishlist.has(prod.id)) {
+        heartSvg.classList.add('favorited');
+        heartBtn.setAttribute('aria-pressed', 'true');
+      } else {
+        heartSvg.classList.remove('favorited');
+        heartBtn.setAttribute('aria-pressed', 'false');
+      }
+
+      // Event Listeners
+
+      heartBtn.addEventListener('click', () => {
+        if (wishlist.has(prod.id)) {
+          wishlist.delete(prod.id);
+        } else {
+          wishlist.add(prod.id);
+        }
+        persistWishlist();
+        updateCounters();
+        renderProducts();
+      });
+
+      compareInput.addEventListener('change', updateCompareButtonState);
+
+      btnAddCart.addEventListener('click', () => {
+        addToCart(prod, selectPres.value);
+      });
+      btnBuyNow.addEventListener('click', () => {
+        addToCart(prod, selectPres.value);
+        openCart();
+        openCheckout();
+      });
+
+    });
+  }
+
+  /** FILTROS Y BUSQUEDA **************************************************************/
+
+  // Sync nav filter category and select sabor
+  function setCategoryFilter(cat) {
+    filters.category = cat;
+    // Sync sabor if in same category, else reset sabor to todos
+    if (cat === 'todos') {
+      filters.sabor = 'todos';
+      document.getElementById('filter-sabor').value = 'todos';
+    } else if (cat === 'combos') {
+      filters.sabor = 'todos';
+      document.getElementById('filter-sabor').value = 'todos';
+    } else {
+      // For categories digestivos/frescos/frutales: set sabor = todos (or could filter later)
+      filters.sabor = 'todos';
+      document.getElementById('filter-sabor').value = 'todos';
+    }
+  }
+
+  // Update comparador button enabled state (max 3, min 1)
+  function updateCompareButtonState() {
+    const checkboxes = document.querySelectorAll('.compare-checkbox-input');
+    const checked = Array.from(checkboxes).filter(c => c.checked);
+    const btnCompare = document.getElementById('btn-compare');
+    const enabled = checked.length > 0 && checked.length <= 3;
+    btnCompare.disabled = !enabled;
+    btnCompare.setAttribute('aria-disabled', (!enabled).toString());
+  }
+
+  // Wishlist modal toggle
+  const wishlistModal = document.getElementById('wishlist-modal');
+  function wishlistModalToggle(open) {
+    if (open) {
+      wishlistModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('btn-wishlist').setAttribute('aria-expanded', 'true');
+      renderWishlistItems();
+      wishlistModal.querySelector('.close-btn').focus();
+    } else {
+      wishlistModal.classList.remove('active');
+      document.body.style.overflow = '';
+      document.getElementById('btn-wishlist').setAttribute('aria-expanded', 'false');
+      document.getElementById('btn-wishlist').focus();
+    }
+  }
+
+  function renderWishlistItems() {
+    const ul = document.getElementById('wishlist-items');
+    ul.innerHTML = '';
+    if (wishlist.size === 0) {
+      document.getElementById('wishlist-empty-msg').style.display = 'block';
+      return;
+    }
+    document.getElementById('wishlist-empty-msg').style.display = 'none';
+    wishlist.forEach(id => {
+      const prod = catalog.find(p => p.id === id);
+      if (!prod) return;
+      const li = document.createElement('li');
+      li.style.marginBottom = '10px';
+      li.textContent = prod.name;
+      ul.appendChild(li);
+    });
+  }
+
+  /** AUTOCOMPLETADO BUSCADOR *********************************************************/
+
+  const searchInput = document.getElementById('product-search');
+  const autocompleteList = document.getElementById('autocomplete-list');
+
+  function autocompleteClose() {
+    autocompleteList.innerHTML = '';
+  }
+
+  searchInput.addEventListener('input', debounce(() => {
+    const val = searchInput.value.trim().toLowerCase();
+    autocompleteList.innerHTML = '';
+    if (!val) return;
+    const matches = catalog.filter(p => p.name.toLowerCase().startsWith(val));
+    for (let match of matches) {
+      const div = document.createElement('div');
+      div.textContent = match.name;
+      div.setAttribute('role', 'option');
+      div.tabIndex = 0;
+      div.addEventListener('click', () => {
+        searchInput.value = match.name;
+        autocompleteClose();
+        filters.sabor = match.name.toLowerCase();
+        renderProducts();
+      });
+      div.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          searchInput.value = match.name;
+          autocompleteClose();
+          filters.sabor = match.name.toLowerCase();
+          renderProducts();
+          searchInput.focus();
+        }
+      });
+      autocompleteList.appendChild(div);
+    }
+  }, 210));
+
+  document.addEventListener('click', (e) => {
+    if (!searchInput.contains(e.target) && !autocompleteList.contains(e.target)) {
+      autocompleteClose();
+    }
+  });
+
+  /** FILTROS EVENTOS ******************************************************************/
+
+  // Navigation category buttons in header nav
+  document.querySelectorAll('.nav-filter-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelectorAll('.nav-filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.removeAttribute('aria-current');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-current', 'page');
+      setCategoryFilter(btn.dataset.filter);
+      renderProducts();
+    });
+  });
+
+  // Sabor select filter
+  document.getElementById('filter-sabor').addEventListener('change', e => {
+    filters.sabor = e.target.value.toLowerCase();
+    // Sync category nav if sabor chosen that implies category?
+    // For simplicity, we keep category fixed
+    renderProducts();
+  });
+
+  // Max price filter
+  const priceRange = document.getElementById('filter-price');
+  const priceValue = document.getElementById('filter-price-value');
+  priceRange.addEventListener('input', e => {
+    const val = Number(e.target.value);
+    priceValue.textContent = val;
+    filters.maxPrice = val;
+    renderProducts();
+  });
+  // Initialize price range max with default 100 and min 0
+  priceRange.min = 20; // minimum price approx
+  priceRange.max = 120; 
+  priceRange.value = 100;
+
+  // Benefits checkboxes
+  document.querySelectorAll('input[name="beneficio"]').forEach(chk => {
+    chk.addEventListener('change', e => {
+      const val = e.target.value.toLowerCase();
+      if (e.target.checked) filters.benefits.add(val);
+      else filters.benefits.delete(val);
+      renderProducts();
+    });
+  });
+
+  // Presentations checkboxes
+  document.querySelectorAll('input[name="presentacion"]').forEach(chk => {
+    chk.addEventListener('change', e => {
+      const val = e.target.value.toLowerCase();
+      if (e.target.checked) filters.presentations.add(val);
+      else filters.presentations.delete(val);
+      renderProducts();
+    });
+  });
+
+  // Order select
+  document.getElementById('order-select').addEventListener('change', e => {
+    filters.order = e.target.value;
+    renderProducts();
+  });
+
+  /** CARRITO FUNCIONES ****************************************************************/
+
+  // Add a product (with selected presentation) to cart
+  function addToCart(prod, presentation) {
+    const key = prod.id + '|' + presentation;
+    if (cart[key]) {
+      cart[key].qty++;
+    } else {
+      cart[key] = {
+        id: prod.id,
+        name: prod.name,
+        presentation,
+        price: prod.price,
+        imgURL: prod.imgURL,
+        qty: 1,
+      };
+    }
+    persistCart();
+    updateCounters();
+  }
+
+  // Remove product from cart
+  function removeFromCart(key) {
+    delete cart[key];
+    persistCart();
+    updateCounters();
+  }
+
+  // Update quantity of cart item
+  function updateCartQuantity(key, qty) {
+    if (cart[key]) {
+      cart[key].qty = qty;
+      if (qty < 1) {
+        removeFromCart(key);
+      } else {
+        persistCart();
+      }
+      updateCounters();
+    }
+  }
+
+  // Open cart drawer
+  function openCart() {
+    const drawer = document.getElementById('cart-drawer');
+    drawer.classList.add('open');
+    drawer.setAttribute('tabindex','0');
+    drawer.focus();
+    document.body.style.overflow = 'hidden';
+    document.getElementById('btn-cart').setAttribute('aria-expanded', 'true');
+    renderCartItems();
+  }
+
+  // Close cart drawer
+  function closeCart() {
+    const drawer = document.getElementById('cart-drawer');
+    drawer.classList.remove('open');
+    drawer.removeAttribute('tabindex');
+    document.body.style.overflow = '';
+    document.getElementById('btn-cart').setAttribute('aria-expanded', 'false');
+    document.getElementById('btn-cart').focus();
+  }
+
+  // Render cart items in drawer
+  function renderCartItems() {
+    const container = document.getElementById('cart-items');
+    container.innerHTML = '';
+    const keys = Object.keys(cart);
+    if (keys.length === 0) {
+      const emptyMsg = document.createElement('p');
+      emptyMsg.textContent = 'No hay productos en el carrito.';
+      emptyMsg.style.fontWeight = '600';
+      emptyMsg.style.color = '#666';
+      emptyMsg.style.textAlign = 'center';
+      container.appendChild(emptyMsg);
+      updateCheckoutButtonState();
+      updateCartSummary();
+      return;
+    }
+    keys.forEach(key => {
+      const item = cart[key];
+      const div = document.createElement('div');
+      div.className = 'cart-item';
+
+      const img = document.createElement('img');
+      img.src = item.imgURL;
+      img.alt = `Imagen ${item.name}`;
+      div.appendChild(img);
+
+      const info = document.createElement('div');
+      info.className = 'cart-item-info';
+
+      const title = document.createElement('h4');
+      title.textContent = item.name;
+      info.appendChild(title);
+
+      const pres = document.createElement('div');
+      pres.textContent = item.presentation;
+      pres.className = 'presentation';
+      info.appendChild(pres);
+
+      const controls = document.createElement('div');
+      controls.className = 'cart-item-controls';
+
+      // Minus button
+      const btnMinus = document.createElement('button');
+      btnMinus.setAttribute('aria-label', `Disminuir cantidad de ${item.name}`);
+      btnMinus.textContent = '−';
+      btnMinus.addEventListener('click', () => {
+        updateCartQuantity(key, item.qty - 1);
+        renderCartItems();
+      });
+
+      // Quantity display
+      const qtySpan = document.createElement('span');
+      qtySpan.textContent = item.qty;
+
+      // Plus button
+      const btnPlus = document.createElement('button');
+      btnPlus.setAttribute('aria-label', `Aumentar cantidad de ${item.name}`);
+      btnPlus.textContent = '+';
+      btnPlus.addEventListener('click', () => {
+        updateCartQuantity(key, item.qty + 1);
+        renderCartItems();
+      });
+
+      controls.appendChild(btnMinus);
+      controls.appendChild(qtySpan);
+      controls.appendChild(btnPlus);
+
+      // Remove button
+      const btnRemove = document.createElement('button');
+      btnRemove.className = 'cart-remove-btn';
+      btnRemove.setAttribute('aria-label', `Eliminar ${item.name} del carrito`);
+      btnRemove.innerHTML = '&times;';
+      btnRemove.addEventListener('click', () => {
+        removeFromCart(key);
+        renderCartItems();
+      });
+
+      controls.appendChild(btnRemove);
+
+      info.appendChild(controls);
+      div.appendChild(info);
+      container.appendChild(div);
+    });
+    updateCheckoutButtonState();
+    updateCartSummary();
+  }
+
+  // Calculate totals for cart summary
+  function updateCartSummary() {
+    const subtotalEl = document.getElementById('cart-subtotal');
+    const discountEl = document.getElementById('cart-discount');
+    const shippingEl = document.getElementById('cart-shipping');
+    const totalEl = document.getElementById('cart-total');
+
+    const subtotal = Object.values(cart).reduce((sum, item) => sum + item.price * item.qty, 0);
+    let discountAmount = 0;
+
+    if (coupon === 'MINTX10') {
+      discountAmount = subtotal * 0.10;
+    }
+
+    let shipping = shippingCost;
+    if (subtotal - discountAmount >= 299) shipping = 0;
+
+    subtotalEl.textContent = formatMoney(subtotal);
+    discountEl.textContent = discountAmount > 0 ? '-' + formatMoney(discountAmount) : '-$0 MXN';
+    shippingEl.textContent = formatMoney(shipping);
+    const total = subtotal - discountAmount + shipping;
+    totalEl.textContent = formatMoney(total >= 0 ? total : 0);
+  }
+
+  // Checkout button enabled if cart not empty
+  function updateCheckoutButtonState() {
+    const btn = document.getElementById('btn-go-checkout');
+    btn.disabled = Object.keys(cart).length === 0;
+  }
+
+  // Event listeners for cart icon open/close
+  document.getElementById('btn-cart').addEventListener('click', openCart);
+  document.getElementById('btn-close-cart').addEventListener('click', closeCart);
+
+  // Coupon form
+  document.getElementById('coupon-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const code = document.getElementById('coupon-code').value.trim().toUpperCase();
+    const help = document.getElementById('coupon-help');
+    if (code === 'MINTX10') {
+      coupon = 'MINTX10';
+      help.textContent = 'Cupón aplicado: 10% de descuento';
+    } else {
+      coupon = null;
+      help.textContent = 'Código inválido';
+    }
+    updateCartSummary();
+  });
+
+  // Shipping calculator
+  document.getElementById('btn-calculate-shipping').addEventListener('click', () => {
+    const zipInput = document.getElementById('shipping-zip').value.trim();
+    const info = document.getElementById('shipping-info');
+    if (!/^\d{5}$/.test(zipInput)) {
+      info.textContent = 'Ingrese un código postal válido de 5 dígitos.';
+      shippingCost = 0;
+      updateCartSummary();
+      return;
+    }
+    // Simulate shipping cost logic: free over $299, else $79 fixed
+    const subtotal = Object.values(cart).reduce((s, item) => s + item.price * item.qty, 0);
+    if (subtotal >= 299) {
+      shippingCost = 0;
+      info.textContent = '¡Envío gratis para esta compra!';
+    } else {
+      shippingCost = 79;
+      info.textContent = 'Costo de envío estándar: $79 MXN';
+    }
+    updateCartSummary();
+  });
+
+  /** CHECKOUT **********************************************************************/
+
+  // Show checkout modal and disable cart while opened
+  const checkoutModal = document.getElementById('checkout-modal');
+  const cartDrawer = document.getElementById('cart-drawer');
+  function openCheckout() {
+    checkoutModal.classList.add('active');
+    cartDrawer.classList.remove('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('btn-go-checkout').setAttribute('aria-expanded', 'true');
+    checkoutModal.querySelector('form').reset();
+    document.getElementById('payment-extra-info').textContent = '';
+    checkoutModal.querySelector('form').focus();
+  }
+  function closeCheckout() {
+    checkoutModal.classList.remove('active');
+    document.body.style.overflow = '';
+    document.getElementById('btn-go-checkout').setAttribute('aria-expanded', 'false');
+    document.getElementById('btn-cart').focus();
+  }
+  document.getElementById('btn-go-checkout').addEventListener('click', () => {
+    openCheckout();
+  });
+  checkoutModal.querySelector('.close-btn').addEventListener('click', () => {
+    closeCheckout();
+  });
+
+  // Payment extra info dynamic text
+  const paymentRadios = checkoutModal.querySelectorAll('input[name="payment"]');
+  const paymentInfo = document.getElementById('payment-extra-info');
+  paymentRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      switch (radio.value) {
+        case 'tarjeta':
+          paymentInfo.textContent = 'Ingresa los datos de tu tarjeta (simulado).';
+          break;
+        case 'mercadopago':
+          paymentInfo.textContent = 'Serás redirigido a Mercado Pago (simulado).';
+          break;
+        case 'oxxopay':
+          paymentInfo.textContent = 'Se generará una referencia numérica para pagar en tienda OXXO.';
+          break;
+        case 'spei':
+          paymentInfo.textContent = 'Se mostrará la CLABE para transferencia.';
+          break;
+        case 'efectivo':
+          paymentInfo.textContent = 'Pago contra entrega en efectivo al recibir.';
+          break;
+        default:
+          paymentInfo.textContent = '';
+      }
+    });
+  });
+
+  // Handle checkout form submission
+  checkoutModal.querySelector('form').addEventListener('submit', e => {
+    e.preventDefault();
+    const form = e.target;
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    // Normally here would be real payment processing.
+    // We simulate order confirmation.
+
+    // Generate order number and tracking code
+    const orderNumber = 'MX' + Math.floor(100000 + Math.random()*900000);
+    const trackingCode = 'EST' + Math.floor(1000000 + Math.random()*9000000);
+
+    // Show confirmation modal
+    const confirmationModal = document.getElementById('confirmation-modal');
+    confirmationModal.querySelector('#order-number').textContent = orderNumber;
+    confirmationModal.querySelector('#tracking-code').textContent = trackingCode;
+    confirmationModal.classList.add('active');
+
+    // Close checkout modal and cart drawer
+    checkoutModal.classList.remove('active');
+    cartDrawer.classList.remove('open');
+
+    // Clear cart and coupon
+    cart = {};
+    coupon = null;
+    shippingCost = 0;
+    persistCart();
+    updateCounters();
+
+    // Focus confirmation modal for screen readers
+    confirmationModal.focus();
+  });
+
+  // Close confirmation modal
+  const confirmationModal = document.getElementById('confirmation-modal');
+  confirmationModal.querySelector('.close-btn').addEventListener('click', () => {
+    confirmationModal.classList.remove('active');
+    document.body.style.overflow = '';
+    document.getElementById('btn-cart').focus();
+  });
+
+  /************************** COMPARE FUNCIONALITY ****************************/
+
+  const btnCompare = document.getElementById('btn-compare');
+  const compareModal = document.getElementById('compare-modal');
+
+  btnCompare.addEventListener('click', () => {
+    const checkedBoxes = Array.from(document.querySelectorAll('.compare-checkbox-input:checked'));
+    if (checkedBoxes.length < 1 || checkedBoxes.length > 3) return;
+    const selectedProducts = checkedBoxes.map(chk => {
+      const card = chk.closest('.product-card');
+      const prodId = card.getAttribute('data-id');
+      return catalog.find(p => p.id === prodId);
+    });
+
+    // Fill comparison modal table with selected products
+    for (let i=1; i<=3; i++) {
+      const nameEl = document.getElementById(`compare-prod${i}`);
+      const ingEl = document.getElementById(`comp-ing${i}`);
+      const benEl = document.getElementById(`comp-ben${i}`);
+      const priceEl = document.getElementById(`comp-price${i}`);
+      if (selectedProducts[i-1]) {
+        nameEl.textContent = selectedProducts[i-1].name;
+        ingEl.textContent = selectedProducts[i-1].ingredients.join(', ');
+        benEl.textContent = selectedProducts[i-1].benefits.join(', ');
+        priceEl.textContent = formatMoney(selectedProducts[i-1].price);
+      } else {
+        nameEl.textContent = '';
+        ingEl.textContent = '';
+        benEl.textContent = '';
+        priceEl.textContent = '';
+      }
+    }
+    compareModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    compareModal.querySelector('.close-btn').focus();
+  });
+
+  // Close compare modal
+  compareModal.querySelector('.close-btn').addEventListener('click', () => {
+    compareModal.classList.remove('active');
+    document.body.style.overflow = '';
+    btnCompare.focus();
+  });
+
+  /** SUSCRIPCIÓN POPUP ***************************************************************/
+
+  const subscribePopup = document.getElementById('subscribe-popup');
+  const subscribeBtn = document.getElementById('subscribe-btn');
+  const subscribeEmailInput = document.getElementById('subscribe-email');
+  const subscribeMsg = document.getElementById('subscribe-msg');
+
+  function showSubscribePopup() {
+    subscribePopup.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    subscribeEmailInput.focus();
+  }
+  function closeSubscribePopup() {
+    subscribePopup.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  subscribePopup.querySelector('.close-popup').addEventListener('click', closeSubscribePopup);
+
+  subscribeBtn.addEventListener('click', () => {
+    const email = subscribeEmailInput.value.trim();
+    if (!email || !email.includes('@')) {
+      subscribeMsg.textContent = 'Por favor ingresa un correo válido.';
+      return;
+    }
+    subscribeMsg.textContent = `¡Gracias por suscribirte! Tu código: MINTX10`;
+    subscribeEmailInput.value = '';
+    // Simulate auto-apply code to coupon in cart if open
+    coupon = 'MINTX10';
+    persistCart();
+    updateCartSummary();
+
+    setTimeout(() => {
+      closeSubscribePopup();
+    }, 3200);
+  });
+
+  // Show popup after 6 sec (only once per session)
+  if (!sessionStorage.getItem('subscribeShown')) {
+    setTimeout(() => {
+      showSubscribePopup();
+      sessionStorage.setItem('subscribeShown', 'true');
+    }, 6000);
+  }
+
+  /** FAQ ACCORDION ******************************************************************/
+
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      const content = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!expanded) {
+        content.hidden = false;
+        content.classList.add('open');
+      } else {
+        content.hidden = true;
+        content.classList.remove('open');
+      }
+    });
+  });
+
+  /** ASISTENTE BOT ************************************************************************/
+  const botBtn = document.getElementById('bot-assistant-btn');
+  const botModal = document.getElementById('bot-assistant-modal');
+  const botCloseBtn = botModal.querySelector('.close-bot');
+  const botChat = document.getElementById('bot-chat');
+  const botInput = document.getElementById('bot-input');
+  const botSendBtn = botModal.querySelector('.send-btn');
+
+  // FAQ Answers for bot
+  const botFAQs = {
+    sabores: "Los sabores disponibles son: Cereza, Fresa, Uva, Menta, Hierbabuena y Mora Azul.",
+    envíos: "El envío es gratis para compras mayores de $299 MXN. Puedes calcularlo introduciendo tu código postal en el carrito. La tarifa estándar es $79 MXN.",
+    beneficios: "Nuestros chicles contienen Xilitol y homeopatía (Nux vomica para digestión y Calcarea Fluorica para sensibilidad dental), ideales para digestión y cuidado bucal.",
+    default: "Disculpa, no entendí tu pregunta. Puedes escribir 'sabores', 'envíos' o 'beneficios' para más información, o contactarnos por WhatsApp."
+  };
+
+  function appendBotMessage(text, isUser = false) {
+    const div = document.createElement('div');
+    div.className = isUser ? 'user-msg' : 'bot-msg';
+    div.textContent = text;
+    botChat.appendChild(div);
+    botChat.scrollTop = botChat.scrollHeight;
+  }
+
+  function botResponse(message) {
+    // Simple keyword based response
+    const msg = message.toLowerCase();
+    if (msg.includes('sabor')) return botFAQs.sabores;
+    if (msg.includes('envío') || msg.includes('envios') || msg.includes('costo de envio') || msg.includes('tarifa')) return botFAQs.envíos;
+    if (msg.includes('beneficio') || msg.includes('beneficios') || msg.includes('que hace') || msg.includes('función')) return botFAQs.beneficios;
+    if (msg.includes('hola') || msg.includes('buenos días') || msg.includes('buenas tardes')) return "¡Hola! ¿En qué puedo ayudarte? Puedes escribir 'sabores', 'envíos' o 'beneficios'.";
+    return botFAQs.default;
+  }
+
+  botBtn.addEventListener('click', () => {
+    const expanded = botBtn.getAttribute('aria-expanded') === 'true';
+    if (expanded) {
+      botModal.classList.remove('active');
+      botBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    } else {
+      botModal.classList.add('active');
+      botBtn.setAttribute('aria-expanded', 'true');
+      botInput.focus();
+      document.body.style.overflow = 'hidden';
+    }
+  });
+
+  botCloseBtn.addEventListener('click', () => {
+    botModal.classList.remove('active');
+    botBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    botBtn.focus();
+  });
+
+  function sendBotMessage() {
+    const text = botInput.value.trim();
+    if (!text) return;
+    appendBotMessage(text, true);
+    botInput.value = '';
+    setTimeout(() => {
+      appendBotMessage(botResponse(text));
+    }, 600);
+  }
+  botSendBtn.addEventListener('click', sendBotMessage);
+  botInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      sendBotMessage();
+    }
+  });
+
+  /** CONTACT BUTTON OPEN MODAL *********************************************************/
+
+  const contactModal = document.getElementById('contact-modal');
+  const btnContact = document.getElementById('btn-contact');
+  btnContact.addEventListener('click', () => {
+    contactModal.classList.add('active');
+    contactModal.querySelector('.close-btn').focus();
+    document.body.style.overflow = 'hidden';
+  });
+  contactModal.querySelector('.close-btn').addEventListener('click', () => {
+    contactModal.classList.remove('active');
+    btnContact.focus();
+    document.body.style.overflow = '';
+  });
+
+  /** LOGIN MODAL OPEN/CLOSE ************************************************************/
+  const loginModal = document.getElementById('login-modal');
+  const btnUser = document.getElementById('btn-user');
+  btnUser.addEventListener('click', () => {
+    loginModal.classList.add('active');
+    loginModal.querySelector('input[type="email"]').focus();
+    document.body.style.overflow = 'hidden';
+  });
+  loginModal.querySelector('.close-btn').addEventListener('click', () => {
+    loginModal.classList.remove('active');
+    btnUser.focus();
+    document.body.style.overflow = '';
+  });
+  loginModal.querySelector('form').addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Inicio de sesión simulado: gracias por usar MintX');
+    loginModal.classList.remove('active');
+    btnUser.focus();
+    document.body.style.overflow = '';
+  });
+
+  /** FOOTER LINKS MODALS ***************************************************************/
+
+  const legalLinks = document.querySelectorAll('.footer-link');
+  const legalModalTemplate = {
+    'privacy-policy': `<h5>Aviso de privacidad</h5>
+      <p>En MintX nos comprometemos a proteger tu privacidad. Toda tu información es confidencial y no será compartida con terceros...</p>`,
+    'terms-conditions': `<h5>Términos y condiciones</h5>
+      <p>Al realizar compras en MintX aceptas nuestras condiciones, incluyendo políticas de pago, envío y devoluciones...</p>`,
+    'shipping-returns': `<h5>Políticas de envío y devoluciones</h5>
+      <p>Entrega de 24-48 hrs por Estafeta y DHL. Rastreo disponible. Garantía de satisfacción y devolución a 30 días con reembolso completo...</p>`,
+  };
+
+  // Create legal modal once
+  let legalModal = null;
+  function openLegalModal(type) {
+    if (!legalModal) {
+      legalModal = document.createElement('div');
+      legalModal.className = 'modal-bg';
+      legalModal.setAttribute('role', 'dialog');
+      legalModal.setAttribute('aria-modal', 'true');
+      legalModal.tabIndex = -1;
+      legalModal.innerHTML = `<div class="modal" role="document">
+        <header>Información legal</header>
+        <button class="close-btn" aria-label="Cerrar información legal" title="Cerrar">&times;</button>
+        <div class="legal-modal-content"></div>
+      </div>`;
+      document.body.appendChild(legalModal);
+
+      legalModal.querySelector('.close-btn').addEventListener('click', () => {
+        legalModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      legalModal.addEventListener('click', e => {
+        if (e.target === legalModal) {
+          legalModal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+
+    const contentDiv = legalModal.querySelector('.legal-modal-content');
+    contentDiv.innerHTML = legalModalTemplate[type] || 'Contenido no disponible.';
+    legalModal.querySelector('header').textContent = {
+      'privacy-policy': 'Aviso de privacidad',
+      'terms-conditions': 'Términos y condiciones',
+      'shipping-returns': 'Políticas de envío y devoluciones',
+    }[type] || 'Información legal';
+
+    legalModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    legalModal.focus();
+  }
+
+  legalLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const modalType = link.dataset.modal;
+      if (modalType) openLegalModal(modalType);
+    });
+  });
+
+  // Accessibility fixes for modals (trap focus)
+  function trapFocus(element) {
+    const focusableEls = element.querySelectorAll('a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    const firstFocusableEl = focusableEls[0];
+    const lastFocusableEl = focusableEls[focusableEls.length - 1];
+    element.addEventListener('keydown', e => {
+      const isTabPressed = (e.key === 'Tab' || e.keyCode === 9);
+      if (!isTabPressed) return;
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusableEl) {
+          lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      } else {
+        if (document.activeElement === lastFocusableEl) {
+          firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+    });
+  }
+  [wishlistModal, loginModal, contactModal, checkoutModal, confirmationModal, compareModal, legalModal, subscribePopup, botModal].forEach(modal => {
+    if (modal) trapFocus(modal);
+  });
+
+  /** INICIALIZACIÓN AL CARGAR *******************************************************/
+
+  loadWishlistStorage();
+  loadCartStorage();
+  updateCounters();
+  renderProducts();
+
+  // Hero buy button click: open combos category + open cart for easy purchase
+  document.getElementById('hero-buy-btn').addEventListener('click', () => {
+    setCategoryFilter('todos');
+    filters.sabor = 'todos';
+    document.getElementById('filter-sabor').value = 'todos';
+    renderProducts();
+    openCart();
+  });
+
+  // Close menu nav if open on resize or click outside
+  window.addEventListener('resize', () => {
+    document.getElementById('menu-toggle').checked = false;
+  });
+  document.body.addEventListener('click', e => {
+    if (!e.target.closest('header')) {
+      document.getElementById('menu-toggle').checked = false;
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
+c
